@@ -1,0 +1,186 @@
+-------------------------------------------------------------------------------
+-- Discord Client.
+-- This library provides the basic functions to interact with Lua-Discord4J.
+-- It represents the Discord Client and provides mostly all functions the IDiscordClient Java Object has.
+-- @module discord
+
+-------------------------------------------------------------------------------
+-- Changes this client's account's avatar.
+-- 
+-- @function [parent=#discord] changeAvatar
+-- @param #string filePath the filepath of the new avatar image
+-- @return #nil
+
+-------------------------------------------------------------------------------
+-- Changes this client's account's email.
+-- 
+-- @function [parent=#discord] changeEmail
+-- @param #string email the new email address
+-- @return #nil
+
+-------------------------------------------------------------------------------
+-- Changes this client's account's password.
+-- 
+-- @function [parent=#discord] changePassword
+-- @param #string password the new password
+-- @return #nil
+
+-------------------------------------------------------------------------------
+-- Changes this client's account's username.
+-- 
+-- @function [parent=#discord] changeUsername
+-- @param #string username the new username
+-- @return #nil
+
+-------------------------------------------------------------------------------
+-- Creates a new guild.
+-- 
+-- @function [parent=#discord] createGuild
+-- @param #string name the name of the new guild
+-- @param #string regionID the ID of the region of the new guild
+-- @return #guild the newly created guild object 
+
+-------------------------------------------------------------------------------
+-- Creates a new guild.
+-- 
+-- @function [parent=#discord] createGuild
+-- @param #string name the name of the new guild
+-- @param #string regionID the ID of the region of the new guild
+-- @param #string filePath the filepath to the icon image or #nil if no icon
+-- @return #guild the newly created guild object 
+
+-------------------------------------------------------------------------------
+-- Gets a channel by its unique id.
+-- 
+-- @function [parent=#discord] getChannelByID
+-- @param #string channelID the unique ID of the channel
+-- @return #channel the channel object with the given ID
+
+-------------------------------------------------------------------------------
+-- Gets a table of all channels visible to the bot.
+-- 
+-- @function [parent=#discord] getChannels
+-- @return #list<#channel> the table of channels
+
+-------------------------------------------------------------------------------
+-- Gets a table of all channels the bot is connected to.
+-- 
+-- @function [parent=#discord] getConnectedVoiceChannels
+-- @return #list<#voicechannel> the table of channels
+
+-------------------------------------------------------------------------------
+-- Gets a guild by it's unique ID
+-- 
+-- @function [parent=#discord] getGuildByID
+-- @param #string guildID the unique ID of the guild
+-- @return #guild the guild with the given ID
+
+-------------------------------------------------------------------------------
+-- Gets a table of all guilds visible to the bot.
+-- 
+-- @function [parent=#discord] getGuilds
+-- @return #list<#guild> the table of guilds
+
+-------------------------------------------------------------------------------
+-- Gets an invite by it's invite code.
+-- 
+-- @function [parent=#discord] getInviteForCode
+-- @param #string code the invite code
+-- @return #invite the invite with the given invite code
+
+-------------------------------------------------------------------------------
+-- Gets the time the bot was launched.
+--
+-- @function [parent=#discord] getLaunchTime
+-- @return #string the string representation of the time
+
+-------------------------------------------------------------------------------
+-- Gets or creates a private channel if non existant.
+-- 
+-- @function [parent=#discord] getOrCreatePMChannel
+-- @param #string userID the unique ID of the user to get or create a channel with
+-- @return #privatechannel the private channel with the given user
+
+-------------------------------------------------------------------------------
+-- Gets the user object of the bot.
+-- 
+-- @function [parent=#discord] getOurUser
+-- @return #user the bot user
+
+-------------------------------------------------------------------------------
+-- Gets a region by it's unique ID
+-- 
+-- @function [parent=#discord] getRegionByID
+-- @param #string regionID the unique ID of the region to get
+-- @return #region the region with the given ID
+
+-------------------------------------------------------------------------------
+-- Gets a table of all regions visible to the bot.
+-- 
+-- @function [parent=#discord] getRegions
+-- @return #list<#region> the table of regions
+
+-------------------------------------------------------------------------------
+-- Gets the response time to the discord servers.
+-- 
+-- @function [parent=#discord] getResponseTime
+-- @return #number the response time in [ms]
+
+-------------------------------------------------------------------------------
+-- Gets the token of the bot user.
+-- 
+-- @function [parent=#discord] getToken
+-- @return #string the token of the bot user
+
+-------------------------------------------------------------------------------
+-- Gets a user by it's unique ID.
+-- 
+-- @function [parent=#discord] getUserByID
+-- @param #string userID the unique ID of the user to get
+-- @return #user the user with the given ID
+
+-------------------------------------------------------------------------------
+-- Gets a voice channel by it's unique ID.
+-- 
+-- @function [parent=#discord] getVoiceChannelByID
+-- @param #string channelID the unique ID of the voice channel to get
+-- @return #voicechannel the voice channel with the given ID 
+
+-------------------------------------------------------------------------------
+-- Gets a table with all voice channels visible to the bot user.
+-- 
+-- @function [parent=#discord] getVoiceChannels
+-- @return #list<#voicechannel> the table of voice channels
+
+-------------------------------------------------------------------------------
+-- Returns whether the user logged in is a bot user or not.
+-- 
+-- @function [parent=#discord] isBot
+-- @return #boolean true if user is bot user, otherwise false
+
+-------------------------------------------------------------------------------
+-- Returns whether the bot is ready to interact with the Discord API
+-- 
+-- @function [parent=#discord] isReady
+-- @return #boolean true if bot is ready, otherwise false
+
+-------------------------------------------------------------------------------
+-- Tries to do a login with the user.
+-- 
+-- @function [parent=#discord] login
+-- @return #nil
+
+-------------------------------------------------------------------------------
+-- Tries to do a logout with the user.
+-- 
+-- @function [parent=#discord] logout
+-- @return #nil
+
+-------------------------------------------------------------------------------
+-- Updates the bot's presence
+-- 
+-- @function [parent=#discord] updatePresence
+-- @param #boolean isIdle whether the bot should be displayed as idle or not
+-- @param #string game the game 
+
+return nil
